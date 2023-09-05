@@ -2,15 +2,6 @@ body{
  font-family: Arial, Helvetica, sans-serif;
 }
 
-.weatherapp{
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 24px;
-    border-radius: 5px;
-background: linear-gradient(89.6deg, rgb(231, 231, 231) -0.1%, rgb(255, 255, 255) 4%, rgb(235, 234, 234) 101%);
-
-
-}
 
 h1{
     color: rgb(50, 50, 50);
@@ -34,3 +25,16 @@ li{
    line-height: 20px;
 
 }
+
+.weatherapp-border{
+    max-width: 600px;
+    margin: 30 auto;
+}
+
+.weatherapp{
+ padding: 24px;
+border-radius: 5px;
+background: linear-gradient(89.6deg, rgb(231, 231, 231) -0.1%, rgb(255, 255, 255) 4%, rgb(235, 234, 234) 101%);
+
+}
+
