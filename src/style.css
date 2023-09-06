@@ -34,7 +34,29 @@ li{
 .weatherapp{
  padding: 24px;
 border-radius: 5px;
-background: linear-gradient(89.6deg, rgb(231, 231, 231) -0.1%, rgb(255, 255, 255) 4%, rgb(235, 234, 234) 101%);
+background: linear-gradient(89.6deg, rgb(249, 240, 240) -0.1%, rgb(255, 255, 255) 4%, rgb(235, 234, 234) 101%);
 
 }
 
+.overview{
+    margin-bottom: 20px;
+}
+
+.weather-temperature img{
+    margin-right: 20px ;
+    height: 100px;
+    width:100px;
+
+}
+.weather-temperature strong{
+    color: rgb(57, 57, 57);
+    font-size: 60px;
+    line-height: 1.7;
+    font-weight: 300;
+}
+.weather-temperature .units{
+    position: relative;
+    font-size: 16px;
+    top: -32px;
+
+}
