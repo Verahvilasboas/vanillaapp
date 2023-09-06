@@ -18,7 +18,9 @@ body{
     background-position: center;
   background-image: url("/Users/vilasver/Desktop/vanillaapp/src/img/minimalist-nature-3oa3xmdcav332ijm (1).jpg");
    background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
+    display: block;
+    margin: auto;
 }
 
 
@@ -53,8 +55,8 @@ li{
 }
 
 .weatherapp{
-        background: #ffffff7f;
- padding: 24px;
+        background: #ffffff96;
+ padding: 34px;
 border-radius: 16px;
 box-shadow:0 30px 50px rgba(65,50,100,.08); 
 color: #878787;
@@ -87,6 +89,7 @@ color: #878787;
     padding: 16px;
     margin: auto;
     padding-left: 180px;
-
+text-decoration-color: none;
+text-decoration: none;
 }
 
