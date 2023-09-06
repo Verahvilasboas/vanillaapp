@@ -20,6 +20,7 @@
     />
     <link rel="stylesheet" href="src/style.css" />
     <title>WeatherApp</title>
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   </head>
   <body>
     <div class="container">
@@ -39,15 +40,13 @@
             id="inputPassword2"
             placeholder="Enter a city"
           />
-        
         </div>
    
         <div class="col-auto">
           <button type="submit" class="btn btn-primary mb-3">Search</button>
         </div>
       </form>
-      <br />
-      <br />
+          <br>
       <div class="cityatmoment"> <h1>New York</h1>
       </div>
     <ul>
@@ -66,21 +65,19 @@
   <div>
     <strong id="temperature">20</strong>
     <span class="units"> °C / °F</span>
-
   </div>
 </div>
 
 </div>
 <div class="col-md-6">
-
 <ul>
-  <li>
+  <li id="precipitation">
     Precipitation: 0%
   </li>
-    <li>
+    <li id="humidity">
     Humidity: 0%
   </li>
-    <li>
+    <li id="wind">
     wind: 0%
   </li>
 </ul>

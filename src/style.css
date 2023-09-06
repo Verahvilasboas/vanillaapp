@@ -1,6 +1,7 @@
 
 
 .container{
+    margin-top: 100px;
     max-width: 740px;
     --bs-gutter-x: 1.5rem;
     --bs-gutter-y: 0;
@@ -14,7 +15,10 @@
 
 body{
  font-family:'Roboto', sans-serif;
-  background: linear-gradient(180deg,hsla(0,0%,100%,.15),hsla(0,0%,100%,0));
+    background-position: center;
+  background-image: url("/Users/vilasver/Desktop/vanillaapp/src/img/minimalist-nature-3oa3xmdcav332ijm (1).jpg");
+   background-repeat: no-repeat;
+    background-size: contain;
 }
 
 
@@ -49,7 +53,7 @@ li{
 }
 
 .weatherapp{
-        background: #fff;
+        background: #ffffff7f;
  padding: 24px;
 border-radius: 16px;
 box-shadow:0 30px 50px rgba(65,50,100,.08); 
@@ -85,3 +89,4 @@ color: #878787;
     padding-left: 180px;
 
 }
+
