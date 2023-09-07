@@ -55,7 +55,7 @@ li{
 }
 
 .weatherapp{
-        background: #ffffff96;
+        background: #ffffffac;
  padding: 34px;
 border-radius: 16px;
 box-shadow:0 30px 50px rgba(65,50,100,.08); 
@@ -89,7 +89,5 @@ color: #878787;
     padding: 16px;
     margin: auto;
     padding-left: 180px;
-text-decoration-color: none;
-text-decoration: none;
 }
 
