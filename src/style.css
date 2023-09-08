@@ -91,13 +91,6 @@ color: #878787;
     padding-left: 180px;
 }
 
-.form-control{
- 
-}
-.form-control:hover{
-background-color: aquamarine;
-
-}
 .btn btn-primary mb-3{
     background-color: aquamarine;
 }

@@ -28,24 +28,29 @@
       <div class="weatherapp">
               <div class="overview">
       <br />
-     
-      <form class="row g-3">
-        <div class="col-auto">
-        </div>
-        <div class="col-auto">
-          <label for="inputCity" class="visually-hidden">City</label>
-          <input
-            type="City"
-            class="form-control"
-            id="inputPassword2"
-            placeholder="Enter a city"
-          />
-        </div>
-   
-        <div class="col-auto">
-          <button type="submit" class="btn btn-primary mb-3">Search</button>
-        </div>
-      </form>
+  
+   <div class="col-5">
+            <form id="search-form">
+              <div class="row">
+                <div class="col-10">
+                  <input
+                    type="search"
+                    class="form-control"
+                    placeholder="Type a city or location"
+                    id="city-input"
+                    autocomplete="off"
+                  />
+                </div>
+                <div class="col-2">
+                  <input
+                    type="submit"
+                    class="btn btn-outline-primary search-button"
+                    value="Search"
+                    id="search-button"
+                  />
+  </div>
+  </div>
+</form>
           <br>
       <div class="city"> <h1>New York</h1>
       </div>
