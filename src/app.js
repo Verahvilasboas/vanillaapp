@@ -47,44 +47,26 @@ return '${day} &{hours}:${minutes}';
     //make api call
  function search(event) {
   event.preventDefault();
-  let city = document.querySelector("#city-input").value;
-  searchCity(city);
+  let city = document.querySelector("#city-input").value
  } 
 
-function searchCity(city) {
-  let apiKey = "9e0fb79c2f66d0cd0dcf06710976a873";
-  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
-  axios.get(apiUrl).then(displayTemperature);
-
-}
-
-let searchForm = document.querySelector("#search-form");
-searchForm.addEventListener("submit", search);
-
-
-
-//current
-
-let searchForm = document.querySelector("#search-form");
-searchForm.addEventListener("submit", search);
-
-
-
-// Bonus Feature
-
-let celsiusLink = document.querySelector("#celsius-link");
-celsiusLink.addEventListener("click", convertToCelsius);
-
-let fahrenheitLink = document.querySelector("#fahrenheit-link");
-fahrenheitLink.addEventListener("click", convertToFahrenheit);
-
-function searchLocation(position) {
-  let apiKey = "cabdbda40038ba7d1165b953b1c7bd6c";
-  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${position.coords.latitude}&lon=${position.coords.longitude}&appid=${apiKey}&units=metric`;
-  axios.get(apiUrl).then(displayWeatherCondition);
-}
-
-function getCurrentLocation(event) {
+function search(event) {
   event.preventDefault();
-  navigator.geolocation.getCurrentPosition(searchLocation);
+  //make api call
+  let apiKey = "49b631c45785fe73d2a88477803dea22";
+  let city = document.querySelector("#city-input").value;
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+  axios.get(apiUrl).then(displayWeatherCondition);
+  console.log(apiUrl);
+
+  let cityElement = document.querySelector("#city");
+  let cityInput = document.querySelector("#city-input");
+  cityElement.innerHTML = cityInput.value;
 }
+
+
+
+let searchForm = document.querySelector("#search-form");
+searchForm.addEventListener("submit", search);
+
+
