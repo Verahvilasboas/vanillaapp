@@ -106,3 +106,14 @@ color: #878787;
     border: none;
 }
 
+button{ color:rgb(88, 88, 85);
+  border: none;
+ border-radius: 4px;
+padding:6px 9px;
+text-align:center;
+display:block;
+margin-left: 16px;
+font-size:12px
+}
+button:hover{ background-color: rgb(194, 162, 162);
+}
