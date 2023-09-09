@@ -16,8 +16,8 @@
 body{
  font-family:'Roboto', sans-serif;
     background-position: center;
-  background-image: url("/Users/vilasver/Desktop/vanillaapp/src/img/peakpx.jpg");
-   background-repeat: no-repeat;
+  background-image: url("https://images.unsplash.com/reserve/aOcWqRTfQ12uwr3wWevA_14401305508_804b300054_o.jpg?ixid=M3wxMjA3fDB8MXxzZWFyY2h8MTR8fG1pbmltYWwlMjBuYXR1cmV8ZW58MHx8fHwxNjk0MDI0NDYzfDA&ixlib=rb-4.0.3");
+  background-repeat: no-repeat;
     background-size: cover;
     display: block;
     margin: auto;
