@@ -39,7 +39,7 @@ ul{
 
 li{
     list-style: none;
-    text-transform: capitalize;
+ 
     margin: 0;
     padding: 0;
     color:rgb(50, 50, 50);
@@ -47,6 +47,9 @@ li{
     font-weight: 100;
    line-height: 20px;
 
+}
+li:first-letter{
+   text-transform: capitalize;
 }
 
 .weatherapp-border{
