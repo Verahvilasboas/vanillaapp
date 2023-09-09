@@ -16,7 +16,7 @@
 body{
  font-family:'Roboto', sans-serif;
     background-position: center;
-  background-image: url("/Users/vilasver/Desktop/vanillaapp/src/img/minimalist-nature-3oa3xmdcav332ijm (1).jpg");
+  background-image: url("/Users/vilasver/Desktop/vanillaapp/src/img/peakpx.jpg");
    background-repeat: no-repeat;
     background-size: cover;
     display: block;
@@ -59,10 +59,10 @@ li:first-letter{
 }
 
 .weatherapp{
-        background: #ffffffac;
+        background: #d9d9d9ac;
  padding: 34px;
 border-radius: 16px;
-box-shadow:0 30px 50px rgba(65,50,100,.08); 
+box-shadow:0 30px 50px rgba(0, 0, 0, 0.08); 
 color: #878787;
 }
 
@@ -95,7 +95,13 @@ color: #878787;
     padding-left: 180px;
 }
 
-.btn btn-primary mb-3{
-    background-color: aquamarine;
+.btn{
+    background-color: rgb(194, 162, 162);
+    list-style: none;
+    border: none;
 }
-
+.btn:hover{
+     background-color: rgb(209, 131, 83);
+    list-style: none;
+    border: none;
+}
