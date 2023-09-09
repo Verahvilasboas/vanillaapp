@@ -4,7 +4,7 @@
 let date = new date (timestamp);
 let hours = date.getHours();
 if (hours < 10) {
-  hours = '0${hours}';
+hours = '0${hours}';
 }
 let minutes = date.getMinutes();
 if (minutes < 10) {
@@ -25,6 +25,7 @@ return '${day} &{hours}:${minutes}';
   
   
   function displayTemperature(response){
+    console.log(response.data);
     let temperatureElement = document.querySelector("#temperature");
     let cityElement = document.querySelector("#city");
     let description = document.querySelector("#description");
@@ -42,17 +43,20 @@ return '${day} &{hours}:${minutes}';
   }
   
 
-
     //make api call
-  let apiKey = "9e0fb79c2f66d0cd0dcf06710976a873";
-  let city = document.querySelector("#city-input").value;
-  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?
-  q=New York&appid=${apiKey}&units=metric`; 
+  function getForecast(coordinates) {
+    let apiKey = "9e0fb79c2f66d0cd0dcf06710976a873";
+    let city = document.querySelector("#city-input").value;
+    let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${apiKey}&units=metric`;
+
+    axios.get(apiUrl).then(displayTemperature);
+  }
   
-  
+function search(city) {
+  let apiKey = "cabdbda40038ba7d1165b953b1c7bd6c";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
   axios.get(apiUrl).then(displayTemperature);
-  console.log(apiUrl);
 
-  
-
+    console.log(search);
+}
 
