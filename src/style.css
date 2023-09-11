@@ -117,3 +117,11 @@ font-size:12px
 }
 button:hover{ background-color: rgb(194, 162, 162);
 }
+
+.forecast1{
+    text-align: center;
+    color: black;
+}
+.minimum{
+    color: #686868;
+}
