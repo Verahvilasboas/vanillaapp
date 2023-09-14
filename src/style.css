@@ -133,6 +133,7 @@ button:hover{ background-color: rgb(194, 162, 162);
   opacity: 0.5;
 }
 
+
 .weather-temperature .units {
   position: relative;
   font-size: 16px;
@@ -140,10 +141,22 @@ button:hover{ background-color: rgb(194, 162, 162);
 }
 
 .weather-temperature .active {
-  color: rgb(224, 162, 45);
+  color: rgb(224, 96, 45);
   cursor: default;
 }
 
-.weather-temperature .active:hover {
+.weather-temperature.active:hover {
   text-decoration: none;
+}
+
+
+.weather-forecast {
+  margin-top: 20px;
+  text-align: center;
+  color: #000;
+}
+
+.weather-forecast-date {
+  font-size: 16px;
+  opacity: 0.5;
 }
