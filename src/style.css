@@ -100,6 +100,7 @@ color: #878787;
     background-color: rgb(194, 162, 162);
     list-style: none;
     border: none;
+    display: block;
 }
 .btn:hover{
      background-color: rgb(106, 106, 106);

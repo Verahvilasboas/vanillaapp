@@ -173,3 +173,32 @@ function getCurrentLocation(event) {
 // bonue feature week 5
 let currentButton = document.querySelector("#current-button");
 currentButton.addEventListener("click", getCurrentLocation);
+
+
+        // Function to get the user's preferred language
+        function getUserLanguage() {
+            return navigator.language || navigator.userLanguage;
+        }
+
+        // Function to update the website content based on the language
+        function updateWebsiteContent() {
+            const userLanguage = getUserLanguage();
+
+            // Example: Check if the user's language is English
+            if (userLanguage.startsWith("en")) {
+                document.getElementById("greeting").textContent = "Hello!";
+            }
+            // Example: Check if the user's language is French
+            else if (userLanguage.startsWith("fr")) {
+                document.getElementById("greeting").textContent = "Bonjour !";
+            }
+            // Add more language cases as needed
+
+            // If the user's language is not supported, you can provide a default language
+            else {
+                document.getElementById("greeting").textContent = "Hello!";
+            }
+        }
+
+        // Call the updateWebsiteContent function when the page loads
+        window.addEventListener("load", updateWebsiteContent);
